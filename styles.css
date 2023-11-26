@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    font-family: "San Francisco";
+  }
+  
+  @font-face {
+    font-family: 'K';
+    src: url('Kingthings Hand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'h';
+    src: url('LabilGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'j';
+    src: url('Objective.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'w';
+    src: url('SF-Pro-Display-Regular.woff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'K', sans-serif;
+  }
+  
+  :root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+  }
+  
+  .heading {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .heading video {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .overlay-text h1 {
+    font-size: 11rem;
+    font-family: 'h';
+    color: #03dffc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay-text h1:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+  
+  .overlay-text h3 {
+    font-size: 3rem;
+    color: #ccff14;
+    font-family: 'h', sans-serif;
+  }
+  
+  .overlay-text h2 {
+    font-size: 1.45rem;
+    margin: 4rem;
+    margin-top: 4rem;
+    margin-bottom: -10rem;
+    font-family: 'h', sans-serif;
+  }
+  
+  .overlay-text a {
+    font-size: 4rem;
+    color: #333333;
+    font-family: 'SF Pro Display', sans-serif;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 10rem;
+    margin: 8rem;
+    background: yellow;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem yellow;
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  
+  .btn:hover {
+    box-shadow: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Add styles for screens with a maximum width of 768px */
+    .overlay-text h1 {
+      font-size: 8rem;
+    }
+  
+    .overlay-text h2 {
+      font-size: 1.5rem;
+      margin: 2rem;
+      margin-top: 2rem;
+      margin-bottom: -5rem;
+    }
+  
+    .btn {
+      padding: 1rem 5rem;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Add styles for screens between 769px and 1024px */
+    .overlay-text h1 {
+      font-size: 10rem;
+    }
+  
+    .overlay-text h2 {
+      font-size: 1.8rem;
+      margin: 3rem;
+      margin-top: 3rem;
+      margin-bottom: -8rem;
+    }
+  
+    .btn {
+      padding: 1rem 8rem;
+    }
+  }
+  
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Add styles for screens between 1025px and 1200px */
+    .overlay-text h1 {
+      font-size: 11rem;
+    }
+  
+    .overlay-text h2 {
+      font-size: 2rem;
+      margin: 4rem;
+      margin-top: 4rem;
+      margin-bottom: -10rem;
+    }
+  
+    .btn {
+      padding: 1rem 9rem;
+    }
+  }
+  
+  /* Add more media queries for other screen sizes if needed */
+  
